@@ -32,7 +32,8 @@ if [ ! -d "$path" ]; then
   ### mkdir if $path not exists ###
   mkdir -p $path
 fi
-printf $DIR
+
+printf "script path: "$DIR"\n\n"
 
 cd ${path} && \
 npx create-react-app ${name} && \
@@ -46,5 +47,5 @@ npm install sass@latest && \
 npm install react-router-dom@latest && \
 npm install @material-ui/core && \
 
-
-echo "\n\n${GREEN}created basic react boilerplate${NC}\nproject name: ${name}\nproject path: ${path}\n"
+cd "${path}"/"${name}"
+printf "\n\n${GREEN}created basic react boilerplate${NC}\nproject name: ${name}\nproject path: ${path}\n"

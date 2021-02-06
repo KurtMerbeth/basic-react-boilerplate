@@ -44,7 +44,6 @@ cp -a ${DIR}/files/* ./src/ &&\
 
 npm install sass@latest && \
 npm install react-router-dom@latest && \
-npm install react-router-dom@latest && \
 npm install @material-ui/core && \
 
 

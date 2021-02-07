@@ -18,7 +18,7 @@ do
 done
 
 
-# check if project name exist
+# check if project name is not empty
 if [ -z "$name" ]; then
     printf "${RED}error:${NC} please pass project name and optional project path\nuseage: ${GREEN}./basicbp -n <project name> -p <path>${NC}\n"
     exit 1
@@ -46,6 +46,5 @@ cp -a ${DIR}/files/* ./src/ &&\
 npm install sass@latest && \
 npm install react-router-dom@latest && \
 npm install @material-ui/core && \
-cd ${path} && \
-cd ${name} && \
+
 printf "\n\n${GREEN}created basic react boilerplate${NC}\nproject name: ${name}\nproject path: ${path}\n"

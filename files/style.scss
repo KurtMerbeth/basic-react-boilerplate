@@ -13,6 +13,10 @@ $footercolor: rgb(204, 202, 202);
     height: 100%;
 }
 
+body{
+    margin: 0 !important;
+}
+
 .app {
     height: 100%;
     display: flex;
@@ -21,17 +25,14 @@ $footercolor: rgb(204, 202, 202);
     justify-content: center;
 
     .appBox{
-        width: 1000px;
-        margin: 0px 0px 0px 0px;
-        padding: 0;
+        width: 100%;
 
         .header {
             @include main($headercolor);    
         }
     
-        .main {
+        .home {
             @include main($maincolor);
-            min-height: 80%;
         }
     
         .footer {

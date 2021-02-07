@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Grid, Box } from "@material-ui/core";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Main from "./components/Main";
+import Home from "./pages/Home";
 import './style.scss';
 
 class App extends Component {
@@ -25,7 +25,7 @@ class App extends Component {
           <Switch>
 
             <Route exact path="/">
-              <Main />
+              <Home />
             </Route>
 
             <Route path="/menu">

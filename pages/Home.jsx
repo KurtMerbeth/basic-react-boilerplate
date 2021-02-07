@@ -1,17 +1,17 @@
 import { Component } from 'react';
 import { Grid } from "@material-ui/core";
 
-class Main extends Component {
+class Home extends Component {
   state = {}
   render() {
     return (
       <div>
-        <Grid container className="main">
-          Main
+        <Grid container className="home">
+          Home
         </Grid>
       </div>
     );
   }
 }
 
-export default Main;
+export default Home;
